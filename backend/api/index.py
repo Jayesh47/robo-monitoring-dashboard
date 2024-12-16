@@ -18,10 +18,11 @@ robots = [robo for robo in robotData]
 def index():
     return jsonify(robots)
 
-# Simulate updating robot data
 def update_robots():
     while True:
         for robot in robots:
+            if robot["Battery Percentage"] == 0:
+                robot["Battery Percentage"] = random.randint(30, 70)
             robot["Battery Percentage"] = max(0, robot["Battery Percentage"] - 1)
             robot["CPU Usage"] = random.randint(0, 100)
             robot["RAM Consumption"] = random.randint(0, 100)
@@ -35,5 +36,5 @@ thread = threading.Thread(target=update_robots, daemon=True)
 thread.start()
 
 if __name__ == '__main__':
-    socketio.run(app)
+    socketio.run(app, debug=False)
 
