@@ -15,7 +15,7 @@ function App() {
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
-
+ 
   useEffect(() => {
     const _conn = io("http://localhost:5000");
     if (_conn) {
