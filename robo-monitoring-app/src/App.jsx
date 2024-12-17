@@ -17,7 +17,7 @@ function App() {
   );
  
   useEffect(() => {
-    const _conn = io("http://localhost:5000");
+    const _conn = io("https://robo-monitoring-dashboard.onrender.com/");
     if (_conn) {
       _conn.on("update_robots", (data) => {
         setRobo(data["robots"]);
