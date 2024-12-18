@@ -29,12 +29,12 @@ def update_robots():
             robot["Online/Offline"] = robot["Battery Percentage"] > 0
             robot["Last Updated"] = datetime.now().isoformat()
             robot["Location Coordinates"] = [random.uniform(-90, 90), random.uniform(-180, 180)]
-        socketio.emit("update_robots", {"robots": robots})  # Emit data to frontend
+        socketio.emit("update_robots", {"robots": robots})
         time.sleep(5)
 
 thread = threading.Thread(target=update_robots, daemon=True)
 thread.start()
 
 if __name__ == '__main__':
-    socketio.run(app, debug=False)
+    socketio.run(app)
 

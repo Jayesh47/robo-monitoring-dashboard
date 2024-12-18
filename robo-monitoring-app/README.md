@@ -1,34 +1,3 @@
-<<<<<<< HEAD
-# robo-monitoring-dashboard
-This Dashboard is designed and developed in flask and reactjs with socketio and leaflet.
-
-## For Running Backend.
-Run "python app.py" in backend folder.
-### Libraries used -
-Flask 3.1.0
-json
-random
-time, threading
-datetime
-
-## For Running Frontend.
-Run "npm start" in robo-monitoring-app
-### Dependencies used -
-"autoprefixer": "^10.4.20",
-"cra-template": "1.2.0",
-"leaflet": "^1.9.4",
-"postcss": "^8.4.49",
-"react": "^19.0.0",
-"react-dom": "^19.0.0",
-"react-leaflet": "^5.0.0",
-"react-scripts": "5.0.1",
-"socket.io-client": "^4.8.1",
-"web-vitals": "^4.2.4"
-
-make sure internet is connected because the map is can't be load.
-This project is based on Robot Data Monitor in which user can easily monitor which robot have low battery or offline and 
-RAM Consumption, CPU Usage.
-=======
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,7 +13,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
- 
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -99,4 +68,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 1a90f57 (include react-script build)
