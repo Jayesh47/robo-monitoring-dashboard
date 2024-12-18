@@ -7,8 +7,8 @@ import time, threading
 from datetime import datetime
  
 app = Flask(__name__)
-socketio = SocketIO(app, cors_allowed_origins="https://robo-monitoring-dashboard.vercel.app/")
 CORS(app, origins=["https://robo-monitoring-dashboard.vercel.app/"])
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Example mock robot data
 robotData = json.load(open("fake_robot_data.json", "r"))
